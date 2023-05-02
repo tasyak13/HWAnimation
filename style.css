@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+}
+
+nav {
+    width: 1110px;
+    margin: auto;
+    background-color: #EBEBEB;
+}
+
+nav {
+    height: 118px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img.logo {
+    width: 34px;
+    height: 34px;
+    margin-top: 33px;
+    margin-bottom: 51px;
+}  
+
+img.logo:nth-child(2) {
+    margin-left: -25px;
+    margin-top: 38px;
+    margin-bottom: 46px;
+}
+
+.nav-img-logo {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: #005FA3;
+
+    padding-left: 30px;
+}
+
+.nav-menu ul {
+    list-style: none;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+
+    display: flex;
+}
+
+
+
+
+@keyframes leftToRiGht {
+    0% {
+        margin-left: 0px;
+    }
+    33% {
+        margin-left: 500px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.anime {
+    animation: fade 2s 1;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    transition: all 3s ease-in-out;
+    margin-left: 100px;
+    margin-top: 100px;   
+}
+
+.box:hover {
+    transform: rotate(360deg) scale(1.5);
+}
+/* animation: leftToRiGht 10s infinite; */
+.frame {
+    height: 500px;
+    /* background-color: aqua; */
+    position: relative;
+    background-image: url('http://vsegda-pomnim.com/uploads/posts/2022-03/1648744702_42-vsegda-pomnim-com-p-priroda-les-ozero-foto-50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrows {
+    position: absolute;
+    right: 400px;
+    bottom: 100px;
+}
+
+.arrow {
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-size: 26px;
+    background-color: rgb(43, 43, 43);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+.nav {
+    position: absolute;
+    min-width: 100px;
+    height: 40px;
+    bottom: 100px;
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot {
+    position: static;
+    height: 15px;
+    width: 15px;
+    background-color: aliceblue;
+    opacity: 0.7;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: blue;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 360px;
+    background-image: url(./Rectangle\ 2.png);
+    transition: all 3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    opacity: 0.65;
+    background-image: url(./fhsfdh.png);
+}
+
+.newcards {
+    display: flex;
+    gap: 30px;
+    margin: 50px;
+}
+
+.new {
+    width: 255px;
+    height: 255px;
+    background-color: #EBEBEB;
+    transition: all 1s ease;
+}
+
+.new:hover {
+    transform: scale(1.2);
+    background-color: #005FA3;
+    border: 1px solid yellow;
+}
+
+.microsoft img {
+    width: 255px;
+    height: 130px;
+    margin: 50px;
+    transition: all 1s ease;
+}
+
+.microsoft img:hover {
+    transform: scale(1.2);
+    border: 1px solid black;
+}
+
+.arrows-mic {
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    font-size: 60px;
+
+}
+/* background-color: #005FA3; */
